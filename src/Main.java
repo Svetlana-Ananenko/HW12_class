@@ -1,17 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        Autor tolstoy = new Autor("Лев ", "Толстой");
+        Author tolstoy = new Author("Лев ", "Толстой");
         Book warAndPeace = new Book("Война и мир", tolstoy, 1873);
-        System.out.println("Книга:  " + warAndPeace.getNameBook() + ". Автор: " + tolstoy.getNameAutorBook() + tolstoy.getSurnameAutorBook() + ". Год выпуска: " + warAndPeace.getYearBook());
+        System.out.println("Книга:  " + warAndPeace.getNameBook() + ". Автор: " + tolstoy.getAuthorName() + tolstoy.getAuthorSurname() + ". Год выпуска: " + warAndPeace.getYearBook());
 
 
-        Autor dostoevskiy = new Autor("Фёдор ", "Достоевский");
+        Author dostoevskiy = new Author("Фёдор ", "Достоевский");
         Book crimeAndPunishment = new Book("Преступление и наказание", dostoevskiy, 1866);
-        System.out.println("Книга:  " + crimeAndPunishment.getNameBook() + ". Автор: " + dostoevskiy.getNameAutorBook() + dostoevskiy.getSurnameAutorBook() + ". Год выпуска: " + crimeAndPunishment.getYearBook());
+        System.out.println("Книга:  " + crimeAndPunishment.getNameBook() + ". Автор: " + dostoevskiy.getAuthorName() + dostoevskiy.getAuthorSurname() + ". Год выпуска: " + crimeAndPunishment.getYearBook());
 
         crimeAndPunishment.setYearBook (2015);
-        System.out.println("Книга:  " + crimeAndPunishment.getNameBook() + ". Автор: " + dostoevskiy.getNameAutorBook() + dostoevskiy.getSurnameAutorBook() + ". Год выпуска: " + crimeAndPunishment.getYearBook());
+        System.out.println("Книга:  " + crimeAndPunishment.getNameBook() + ". Автор: " + dostoevskiy.getAuthorName() + dostoevskiy.getAuthorSurname() + ". Год выпуска: " + crimeAndPunishment.getYearBook());
 
     }
 }
